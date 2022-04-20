@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+   
+    <style>
+       body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100vh;
+  place-items: center;
+  overflow: hidden;
+  background: white;
+  color: rgb(255, 255, 255);
+}
+span {
+  transition: 1s;
+  user-select: none;
+}
+.tag {
+  transform: scale(20);
+}
+
+
+    </style>
+    <body>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+        <script>
+            var span = document.querySelectorAll('span')
+           
+           function tag() {
+             var num = Math.floor(Math.random()*span.length)
+             span[num].classList.add('tag')
+             span[num].style.color = "hsl("+Math.floor(Math.random()*360)+",100%,50%)"
+           
+             setTimeout(function(){
+               span[num].classList.remove('tag')
+             },1000)  
+             
+           }
+           
+           setInterval(tag, 200)
+           
+           
+           
+               </script>
+</body>
+
+</html>
